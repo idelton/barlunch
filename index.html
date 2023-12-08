@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="js/bootstrap.js">
+    <link rel="stylesheet" href="style.css">
+    <title>barLunch</title>
+</head>
+<body style="background-color: #f0f0f0;">
+    <!--nav-->
+<div class=" row fixed-top bg-dark text-white py-2  text-center" id="collapsibleNavbar">
+    <!--boutton toglle nav-->
+    <button  class="navbar-toggler" type="button" data-toggle="collapse" aria-label="Togglenavigation"></button>
+    <!--boutton nav-->
+   <button  onclick="scrollToSection('home')" class="btn btn-outline-secondary border-0 col-sm-3 py-1  ml -4 text-white" >HOME</button>
+   <button  onclick="scrollToSection('about')" class="btn btn-outline-secondary border-0 col-sm-3 py-1  ml-4 text-white" >ABOUT</button>
+   <button  onclick="scrollToSection('menu')" class="btn btn-outline-secondary border-0 col-sm-3 py-1  ml-4 text-white" >MENU</button>
+   <button  onclick="scrollToSection('where')" class="btn btn-outline-secondary border-0 col-sm-3 py-1  ml-4 text-white" >WHERE</button>
+</div>
+</nav>
+<!--Banner-->
+<div  id="home" class="container-fluid p-0 postion-relative"> <!--p-0 pour enlever margin par default-->
+    <img src="photo/cocktails-frais-glace-citron-citron-vert-fruits-ia-generative.jpg" 
+     style="width: 100%;height: 30%; opacity: 0.9;">  
+    <div class="position-absolute top-50 start-50 " style="opacity: 1; ">
+        <h1 class="p-n2 text-white" style="font-size: 40px;">BarLunch</h1> 
+    </div>
+</div>
+
+<!--A propos-->
+<div id="about" class="container text-black shadow-sm">
+    <h5 class="text-center" style="padding: 60px;">À PROPOS DU BARLUNCH</h5>
+    <p> Le BarLunch est un lieu chaleureux et convivial où vous pouvez savourer
+        une délicieuse cuisine concoctée avec des ingrédients frais et locaux.
+         Notre équipe de chefs passionnés s'efforce de créer des plats qui raviront
+         vos papilles et vous offriront une expérience culinaire mémorable.</p>
+    <p class="mb-4">Nous sommes fiers de proposer une variété de plats, 
+        des entrées appétissantes aux desserts succulents,
+        le tout accompagné d'une sélection exceptionnelle de boissons.
+        Que vous veniez pour un repas décontracté entre amis ou pour 
+        célébrer une occasion spéciale, le BarLunch est l'endroit idéal 
+        pour partager de bons moments et déguster une cuisine exceptionnelle.</p>
+</div>
+<!--A propos img-->
+           <img class="mx-auto d-block img-fluid"
+            src="photo/plan-large-bouteilles-verres-vitrine-dans-bar-hotel-scandic-copenhague-danemark.jpg"
+             style="width: 100%;max-width: 1000px; height: 550px;" >
+
+             <p class="mt-4 text-center">Horaires d'ouverture: tout les Jours de 18h à 23h </p>
+             <p class="mb-5 pb-3 text-center">Adrress: 25 rue pierre, 44400 Nantes</p>
+</div>
+
+<!--La Carte  -->
+<div class="container" id="menu">
+    <h5 class="text-center mb-4"> La Carte</h5>
+    <div class="row shadow-lg">
+        <button onclick="afficherSection('manger')" class="btn-secondary active border-0 col-6 active ">
+            Manger</button>
+        <button onclick="afficherSection('boisson')"  class="col-6 btn-secondary text-white ">
+            Boissons</button>
+        <div >
+            <dl id="manger" class="content-section "style="display:block;" >
+               <div class="py-2 "  >
+                <dt>Tapas</dt>
+                <dd>une sélection variée de petites bouchées: mini burger,quesadillas et d'autre delices. 15&euro;</dd>
+            </div>
+            <div class="py-2">
+                <dt>Chicken wings</dt>
+                <dd>Ailes de poulet cuites à la perfection, servies avec une sauce de votre choix.  12&euro;</dd>
+            </div>
+            <div class="py-2"><dt>mini-burgers</dt>
+                <dd>Petis pains moelleux garnis de tendres morceaux de poulet et de sauces au choix.  10&euro;</dd>
+            </div>
+                <div class="py-2">
+                    <dt>nachos</dt>
+                    <dd> Tortillas croustillantes recouvertes de fromage fondu, jalapenos,salsa et créme aigre.  9&euro;</dd>
+                </div>
+                <div class="py-2">
+                    <dt>calamars frits</dt>
+                <dd>calamars tendres et croustilllants accompagner d'une sauche au choix.  11&euro;</dd>
+                </div>
+                <div class="py-2">
+                    <dt>quesadillas de fromage</dt>
+                <dd>Tortillas grillées garnies de fromage fondant, accompagner de salsa et de guacamole  7&euro;</dd>
+                </div>
+                
+            </dl>
+        </div>
+       
+        <div>
+            <dl  id="boisson"  class="content-section " style="display: none;" >
+                <div class="py-2" >
+                    <dt>Café</dt>
+                    <dd>Expresso 2&euro;,  Café américain 3&euro;,  Cappucino 4.50&euro;,  Latte 4&euro;,  Mocha 5&euro;,  Macchiato 3.50&euro;</dd>
+                </div>
+                <div class="py-2" >
+                    <dt>Mojito</dt>
+                    <dd>Cocktail rafrâichissant à base de menthe,de sucre,de citron,de glace et de rhum blanc.  8&euro;</dd>
+                </div>
+                <div class="py-2" >
+                    <dt>Margarita</dt>
+                    <dd>Boisson classique à base de tequila,triple sec et jus de citron,avec bordure de sel sur le verre. 9&euro;</dd>
+                </div>
+                <div class="py-2" >
+                    <dt>Monaco</dt>
+                    <dd>Mélange rafrâichissant de bière, de limonade et de sirop de grenadine. 6&euro;</dd>
+                </div>
+                <div class="py-2" >
+                    <dt>Mai Tai</dt>
+                    <dd>Cocktail exotique à base de rhum,de liqueurs d'amande et d'orange. avec un soupçon de jus de citron  10&euro;</dd>
+                </div>
+                <div class="py-2" >
+                    <dt>Daiquiri</dt>
+                    <dd>Boisson légère à base de rhum, de jus de citron vert et de sucre,servie frappée ou sur glace. 7&euro; </dd>
+                </div>
+             
+            </dl>
+        </div>
+        
+    </div>
+</div>
+
+<div></div>
+   <!--image caffe-->
+   <div  class="container mt-4">
+    <img class="img-fluid rounded mx=auto d-block" 
+    src="photo/personne-servant-tasse-cafe.jpg"
+     style="width: 100%; height: 550px; object-fit: cover;" >
+   </div>
+ 
+<!--ou nous trouver-->
+<div id="where" class="container">
+    <div class="row">
+        <h5 class="text-center my-5 pt-5 " >OU NOUS  TROUVEZ</h5>
+        <div class="col-md-6">
+            <img class="float-left w100" src="photo/plan-large-bouteilles-verres-vitrine-dans-bar-hotel-scandic-copenhague-danemark.jpg" 
+            style="width: 100%;">
+        </div>
+        <div class="col-md-6 text-center-xl">
+            <p  class="float-right pt-5 mt-4 " style="letter-spacing: 2px; line-height: 1.6;">
+                Nous proposons un service de restauration complet pour tout événement,
+                petit ou grand. Nous comprenons vos besoins et nous préparons des plats répondant à tout les critéres
+                les plus importants, à à la fois l'apparence et le goût.</p>
+        <p style="letter-spacing: 2px; line-height: 1.6;">
+                Réserver une table , demandez le plat du jour 
+                ou envoyer-nous simplement un message</p>
+        </div>
+    </div>
+</div>
+
+
+<!--formulaire-->
+<div  class="container shadow my-5 py-3" style="height: 550px;">
+    <h3 class="text-center mt-3">Nous Contactez</h3>
+    <form action="/action.php">
+       <input class="my-4" type="text" placeholder="Nom" style="width: 100%;height:  50px;">
+     <select   name="select" id="select" style="width: 100%;height:  50px;" >
+            <option>Slectionnez nombre de personne</option>
+            <option >1</option>
+            <option >2</option>
+            <option >3</option>
+            <option >4</option>
+        </select>
+     <input class="mt-4" type="datetime-local" name="date" id="date"style="width: 100%;height: 50px;">
+     <textarea class="mt-4"  name="msg" id="msg" style="width: 100%;height:  50px;"
+      placeholder="Message Special"></textarea>
+     <button class="border-0 bg-dark text-white  mt-4 p-1">ENVOYER MESSAGE</button>
+  </form>
+</div>
+
+<!--footer-->
+    <div class="jumbotron jumbotron-fluid bg-dark text-white py-5">
+        <p class="text-center">Fais Par Idelton 2023 </p>
+    </div>
+
+
+<!--script-->
+<script>
+    function scrollToSection(sectionId){
+        document.getElementById(sectionId).scrollIntoView({behavior:'smooth'});
+    }
+</script>
+ <script src="carte.js"></script>
+    <script src="js/bootstrap.js"></script>
+</body>
+</html>
